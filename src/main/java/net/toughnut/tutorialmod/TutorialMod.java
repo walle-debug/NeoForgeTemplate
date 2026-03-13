@@ -2,6 +2,7 @@ package net.toughnut.tutorialmod;
 
 import net.minecraft.world.item.CreativeModeTabs;
 import net.toughnut.tutorialmod.block.ModBlocks;
+import net.toughnut.tutorialmod.item.ModCreativeModeTabs;
 import net.toughnut.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -41,6 +42,7 @@ public class TutorialMod {
         NeoForge.EVENT_BUS.register(this);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
