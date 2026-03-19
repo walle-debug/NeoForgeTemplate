@@ -10,6 +10,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.toughnut.tutorialmod.TutorialMod;
 
+import net.toughnut.tutorialmod.block.custom.MagicBlock;
 import net.toughnut.tutorialmod.utils.RegistryHelper;
 
 
@@ -29,12 +30,18 @@ public static final DeferredBlock<Block> BISMUTH_BLOCK = RegistryHelper.register
                             .strength(3f)
                             .requiresCorrectToolForDrops()
                             .sound(SoundType.AMETHYST)), BLOCKS);
+
     public static final DeferredBlock<Block> BISMUTH_DEEPSLATE_ORE = RegistryHelper.registerBlock("bismuth_deepslate_ore",
             () -> new DropExperienceBlock(UniformInt.of(3, 5),
                     BlockBehaviour.Properties.of()
                             .strength(5f)
                             .requiresCorrectToolForDrops()
                             .sound(SoundType.AMETHYST_CLUSTER)), BLOCKS);
+    public static final DeferredBlock<Block> MAGIC_BLOCK = RegistryHelper.registerBlock("magic_block", () ->
+            new MagicBlock(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .sound(SoundType.FROGLIGHT)
+                    .requiresCorrectToolForDrops()), BLOCKS);
 
     public static void register(IEventBus eventbus){
         BLOCKS.register(eventbus);
