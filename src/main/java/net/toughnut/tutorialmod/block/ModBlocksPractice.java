@@ -1,6 +1,7 @@
 package net.toughnut.tutorialmod.block;
 
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
@@ -81,6 +82,7 @@ public class ModBlocksPractice {
 
     }
     public static DeferredRegister.Items ITEMS = DeferredRegister.createItems(TutorialMod.MOD_ID);
+
 }
 
 
