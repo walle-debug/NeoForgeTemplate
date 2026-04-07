@@ -1,7 +1,6 @@
-package net.toughnut.tutorialmod.utils;
+package net.toughnut.tutorialmod.util;
 
 import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.registries.DeferredBlock;

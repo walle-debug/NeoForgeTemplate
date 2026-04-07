@@ -11,9 +11,19 @@
   "block.tutorialmod.bismuth_ore": "Block of Bismuth Ore",
   "block.tutorialmod.bismuth_deepslate_ore": "Block of Bismuth Deepslate Ore",
   "block.tutorialmod.magic_block": "Block of Magic",
+  "block.tutorialmod.morpher_block": "Block of Morphing",
+
+
 
 
   "creativetab.tutorialmod.bismuth_items": "Bismuth Items",
-  "creativetab.tutorialmod.bismuth_blocks": "Bismuth Blocks"
+  "creativetab.tutorialmod.bismuth_blocks": "Bismuth Blocks",
+
+  "tooltip.tutorialmod.magic_block.tooltip": "This block is very §2Radioactive§r",
+  "tooltip.tutorialmod.chisel": "This item is very §2Radioactive§r",
+  "tooltip.tutorialmod.chisel.shift_down": "This item can chisel blocks",
+  "tooltip.tutorialmod.radish.tooltip": "Gives §8Bad Omen§r",
+  "tooltip.tutorialmod.morpher_block.tooltip": "This Block is §8Mysterious§r"
+
 
 }
