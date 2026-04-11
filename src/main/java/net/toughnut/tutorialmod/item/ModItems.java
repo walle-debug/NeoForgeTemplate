@@ -10,6 +10,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.toughnut.tutorialmod.TutorialMod;
 import net.toughnut.tutorialmod.item.custom.ChiselItem;
 import net.toughnut.tutorialmod.item.custom.FuelItem;
+import net.toughnut.tutorialmod.item.custom.GarnetChiselItem;
 import org.checkerframework.checker.units.qual.C;
 
 import java.util.List;
@@ -35,10 +36,16 @@ public class ModItems {
                     super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
                 }
             });
+    public static final DeferredItem<Item> GARNET_CHISEL = ITEMS.register("garnet_chisel",
+            () -> new GarnetChiselItem(new Item.Properties()));
+
     public static final DeferredItem<Item> FROSTFIRE_ICE = ITEMS.register("frostfire_ice",
             () -> new FuelItem(new Item.Properties(), 800));
+
     public static DeferredItem<Item> STARLIGHT_ASHES = ITEMS.register("starlight_ashes",
             ()-> new Item(new Item.Properties()));
+
+
 
 
 

@@ -17,6 +17,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.toughnut.tutorialmod.item.ModItems;
+import net.toughnut.tutorialmod.util.ModTags;
 
 import java.util.List;
 
@@ -34,7 +35,7 @@ public class MagicBlock extends Block {
     @Override
     public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
         if(entity instanceof ItemEntity itemEntity){
-            if(itemEntity.getItem().getItem() == ModItems.RAW_BISMUTH.get()){
+            if(isValidItem(itemEntity.getItem())){
                 itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
             }
             if(itemEntity.getItem().getItem() == Items.DANDELION){
@@ -42,6 +43,10 @@ public class MagicBlock extends Block {
             }
         }
         super.stepOn(level, pos, state, entity);
+    }
+
+    private boolean isValidItem(ItemStack item) {
+        return item.is(ModTags.Items.TRASFORMABLE_ITEMS);
     }
 
     @Override

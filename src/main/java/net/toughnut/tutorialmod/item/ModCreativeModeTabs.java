@@ -26,6 +26,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RADISH);
                         output.accept(ModItems.FROSTFIRE_ICE);
                         output.accept(ModItems.STARLIGHT_ASHES);
+                        output.accept(ModItems.GARNET_CHISEL);
                     }).build());
 
 
@@ -41,6 +42,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.BISMUTH_DEEPSLATE_ORE);
                         output.accept(ModBlocks.MAGIC_BLOCK);
                         output.accept(ModBlocks.MORPHER_BLOCK);
+                        output.accept(ModBlocks.GOOFY_BLOCK);
                     })
 
 

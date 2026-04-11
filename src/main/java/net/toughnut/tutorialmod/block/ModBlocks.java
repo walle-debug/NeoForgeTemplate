@@ -10,6 +10,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.toughnut.tutorialmod.TutorialMod;
 
+import net.toughnut.tutorialmod.block.custom.GoofyBlock;
 import net.toughnut.tutorialmod.block.custom.MagicBlock;
 import net.toughnut.tutorialmod.block.custom.MorpherBlock;
 import net.toughnut.tutorialmod.util.RegistryHelper;
@@ -38,16 +39,23 @@ public static final DeferredBlock<Block> BISMUTH_BLOCK = RegistryHelper.register
                             .strength(5f)
                             .requiresCorrectToolForDrops()
                             .sound(SoundType.AMETHYST_CLUSTER)), BLOCKS);
+
     public static final DeferredBlock<Block> MAGIC_BLOCK = RegistryHelper.registerBlock("magic_block", () ->
             new MagicBlock(BlockBehaviour.Properties.of()
                     .strength(4f)
                     .sound(SoundType.FROGLIGHT)
                     .requiresCorrectToolForDrops()), BLOCKS);
+
     public static DeferredBlock<Block> MORPHER_BLOCK = RegistryHelper.registerBlock("morpher_block", () ->
             new MorpherBlock(BlockBehaviour.Properties
                     .of().strength(3f)
                     .sound(SoundType.ANCIENT_DEBRIS)
                     .requiresCorrectToolForDrops()), BLOCKS);
+
+    public static DeferredBlock<Block> GOOFY_BLOCK = RegistryHelper.registerBlock("goofy_block",
+            () -> new GoofyBlock(BlockBehaviour.Properties.of()
+                    .strength(7f)
+                    .sound(SoundType.AMETHYST_CLUSTER)), BLOCKS);
 
     public static void register(IEventBus eventbus){
         BLOCKS.register(eventbus);
